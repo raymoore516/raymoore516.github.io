@@ -5,18 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cat Skool</title>
     <style>
-        /* Use Flexbox to center the image */
-        body {
+        #cat-skool-book {
+            width: 100%;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
-            margin: 0;
+            gap: 10px;
         }
-        
-        /* Style for the image */
-        img {
-            width: 95vw; /* Make the image 95% of the viewport width */
-            object-fit: contain; /* Ensures image aspect ratio is maintained */
+        #cat-skool-book img {
+            width: 90%;
+            border: 1px solid black;
         }
     </style>
 </head>
@@ -29,13 +27,14 @@
         <li><strong>Teacher:</strong> Ms. Moore</li>
         <li><strong>Teacher:</strong> Mr. Ray</li>
     </ul>
-    <hr>
-    <img src="img/1.png">
-    <img src="img/2.png">
-    <img src="img/3.png">
-    <img src="img/4.png">
-    <img src="img/5.png">
-    <img src="img/6.png">
-    <img src="img/7.png">
+    <div id="cat-skool-book">
+        <img src="img/1.png">
+        <img src="img/2.png">
+        <img src="img/3.png">
+        <img src="img/4.png">
+        <img src="img/5.png">
+        <img src="img/6.png">
+        <img src="img/7.png">
+    </div>
 </body>
 </html>
